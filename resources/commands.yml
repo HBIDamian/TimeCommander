@@ -1,0 +1,12 @@
+# TimeCommander
+#
+# Command: Command to execute
+# Time: Amount of time in ticks until command is executed
+
+Commands:
+  - Command: say 1
+    Time: 100
+  - Command: say 2
+    Time: 200
+  - Command: say 3
+    Time: 300
