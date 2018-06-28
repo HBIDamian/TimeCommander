@@ -1,7 +1,7 @@
 name: TimeCommander
 main: TimeCommander\Main
 load: STARTUP
-version: 1.0.1
-api: 3.0.0-ALPHA12
+version: 1.0.2
+api: 3.0.2
 author: TheDeibo
 description: Allows the user to set commands to a timer for the server to run.

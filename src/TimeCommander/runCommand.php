@@ -1,12 +1,12 @@
 <?php
 namespace TimeCommander;
-use pocketmine\scheduler\PluginTask;
+use pocketmine\scheduler\Task;
 
-class runCommand extends PluginTask {
+class runCommand extends Task {
     private $plugin;
 
     public function __construct(Main $plugin, $command){
-        parent::__construct($plugin);
+        //parent::__construct($plugin);
         $this->plugin = $plugin;
         $this->command = $command;
         $this->cmdStart = 0;
