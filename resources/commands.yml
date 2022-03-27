@@ -2,6 +2,7 @@
 #
 # Command: Command to execute
 # Time: Amount of time in ticks until command is executed
+# One second is 20 ticks.
 
 Commands:
   - Command: say 1
