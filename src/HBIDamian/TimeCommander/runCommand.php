@@ -3,7 +3,8 @@ namespace HBIDamian\TimeCommander;
 use pocketmine\scheduler\Task;
 
 class runCommand extends Task {
-    private $plugin;
+    
+    private Main $plugin;
 
     public function __construct(Main $plugin, $command){
         //parent::__construct($plugin);
