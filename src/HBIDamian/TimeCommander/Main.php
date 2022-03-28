@@ -10,7 +10,6 @@ class Main extends PluginBase implements Listener {
 
 
     public function onEnable(): void{
-        @mkdir($this->getDataFolder());
         $this->saveResource("commands.yml");
         $this->getCommandsConfig = new Config($this->getDataFolder() . "commands.yml", Config::YAML);
         $commandsConfig = $this->getCommandsConfig()->getAll();
@@ -22,7 +21,7 @@ class Main extends PluginBase implements Listener {
     }
 
     public function executeCommand($command){
-        $this->getServer()->dispatchCommand(new ConsoleCommandSender($this->getServer()::getInstance(), $this->getServer()::getInstance()->getLanguage()), $command);
+        $this->getServer()->dispatchCommand(new ConsoleCommandSender($this->getServer(), $this->getServer()->getLanguage()), $command);
     }
 
     public function getCommandsConfig(){
