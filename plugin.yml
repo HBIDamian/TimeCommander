@@ -1,7 +1,7 @@
 name: TimeCommander
 main: HBIDamian\TimeCommander\Main
 load: STARTUP
-version: 1.2.0
+version: 1.3.0
 api: 5.0.0
 author: HBIDamian
 description: Allows the user to set commands to a timer for the server to run.
