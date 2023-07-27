@@ -3,11 +3,11 @@ namespace HBIDamian\TimeCommander;
 use pocketmine\scheduler\Task;
 
 class runCommand extends Task {
-    
+    private string $command;
+    private int $cmdStart;
     private Main $plugin;
-
+    
     public function __construct(Main $plugin, $command){
-        //parent::__construct($plugin);
         $this->plugin = $plugin;
         $this->command = $command;
         $this->cmdStart = 0;
